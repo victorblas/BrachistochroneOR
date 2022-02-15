@@ -1,0 +1,6 @@
+param n := 500;
+param a := 4;
+param g := 9.8;
+param b := 1;
+param eps := 1e-6;
+param delta := 1e-3;

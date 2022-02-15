@@ -1,0 +1,98 @@
+reset;
+model model1.mod;
+data dades.dat;
+options solver minos;
+option minos_options 'superbasics_limit= 1000';
+solve;
+
+display objectiu;
+
+printf "################\n";
+printf "a = %d\n", a;
+printf "b = %d\n", b;
+
+printf "x = np.array([";
+for {i in 0..n} {
+	if i > 0 then printf ",";
+	printf "%f", x[i];
+}
+printf "])\n";
+
+printf "y = np.array([";
+for {i in 0..n} {
+	if i > 0 then printf ",";
+	printf "%f", y[i];
+}
+printf "])\n";
+
+printf "draw(x, y, 'model1')\n";
+printf "################\n\n\n\n";
+
+
+
+
+reset;
+model model2.mod;
+data dades.dat;
+options solver minos;
+option minos_options 'superbasics_limit= 1000';
+solve;
+
+display objectiu;
+
+printf "################\n";
+printf "a = %d\n", a;
+printf "b = %d\n", b;
+
+printf "x = np.array([";
+for {i in 0..n} {
+	if i > 0 then printf ",";
+	printf "%f", x[i];
+}
+printf "])\n";
+
+printf "y = np.array([";
+for {i in 0..n} {
+	if i > 0 then printf ",";
+	printf "%f", y[i];
+}
+printf "])\n";
+
+printf "draw(x, y, 'model2')\n";
+printf "################\n\n\n\n";
+
+
+
+
+reset;
+model model3.mod;
+data dades.dat;
+options solver minos;
+option minos_options 'superbasics_limit= 1000';
+solve;
+
+display objectiu;
+
+printf "################\n";
+printf "a = %d\n", a;
+printf "b = %d\n", b;
+
+printf "x = np.array([";
+for {i in 0..n} {
+	if i > 0 then printf ",";
+	printf "%f", x[i];
+}
+printf "])\n";
+
+printf "y = np.array([";
+for {i in 0..n} {
+	if i > 0 then printf ",";
+	printf "%f", y[i];
+}
+printf "])\n";
+
+printf "draw(x, y, 'model3')\n";
+printf "################\n\n\n\n";
+
+
+
